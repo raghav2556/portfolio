@@ -1,81 +1,171 @@
 # Raghvendra Shah — Developer Portfolio
 
-Dark anime-themed portfolio built with React + Vite + Tailwind CSS v4 + Framer Motion.
+A modern, dark-themed developer portfolio built to showcase my projects, technical skills, achievements, and journey as a software developer.
+
+## Live Demo
+
+[Add your deployed portfolio URL here]
 
 ---
 
-## Stack
+## About
 
-| Tech | Version | Role |
-|---|---|---|
-| React | 18 | UI framework |
-| Vite | 5 | Dev server & build |
-| Tailwind CSS | 4 | Utility styling |
-| Framer Motion | 11 | All animations |
-| EmailJS | 4 | Contact form (no backend) |
-| react-scroll | 1.9 | Smooth in-page navigation |
-| react-icons | 5 | Feather + Simple icons |
+I'm an Information Technology undergraduate passionate about building scalable software and solving real-world problems through technology. This portfolio serves as a central hub for my work, experience, achievements, and technical interests.
+
+The website features a custom dark aesthetic inspired by modern developer portfolios, smooth animations, responsive design, project showcases, and a fully functional contact form powered by EmailJS.
 
 ---
 
-## Quick Start
+## Features
+
+* Responsive design for desktop, tablet, and mobile
+* Smooth page transitions and animations using Framer Motion
+* Project showcase with technology stacks and repository links
+* Skills section with animated proficiency indicators
+* Education, achievements, and extracurricular activities timeline
+* Functional contact form with EmailJS integration
+* Custom UI components and reusable architecture
+* Dark-themed modern design system
+
+---
+
+## Tech Stack
+
+| Technology      | Purpose            |
+| --------------- | ------------------ |
+| React           | Frontend Framework |
+| Vite            | Build Tool         |
+| Tailwind CSS v4 | Styling            |
+| Framer Motion   | Animations         |
+| EmailJS         | Contact Form       |
+| React Scroll    | Smooth Navigation  |
+| React Icons     | Icons              |
+
+---
+
+## Installation
+
+Clone the repository:
 
 ```bash
-# 1. Install dependencies
+git clone https://github.com/your-username/portfolio.git
+cd portfolio
+```
+
+Install dependencies:
+
+```bash
 npm install
+```
 
-# 2. Start dev server
+Start the development server:
+
+```bash
 npm run dev
+```
 
-# 3. Open http://localhost:5173
+Open:
+
+```text
+http://localhost:5173
 ```
 
 ---
 
 ## Environment Variables
 
-The `.env` file is included with your EmailJS credentials. **Never commit it to Git.**
+Create a `.env` file in the project root:
 
-```
-VITE_EMAILJS_SERVICE_ID=...
-VITE_EMAILJS_TEMPLATE_ID=...
-VITE_EMAILJS_PUBLIC_KEY=...
+```env
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
 ```
 
-For your EmailJS template, make sure these variable names match:
-- `from_name`
-- `from_email`
-- `subject`
-- `message`
+Required EmailJS variables:
+
+* from_name
+* from_email
+* subject
+* message
+
+Never commit your `.env` file to version control.
 
 ---
 
 ## Project Structure
 
-```
+```text
 src/
-├── components/        # Section components (Hero, About, Projects…)
-├── shared/            # Reusable UI (AnimatedTitle, Toast, CustomCursor…)
-├── hooks/             # useNavScroll, useCountUp
+├── components/
+├── shared/
+├── hooks/
 ├── data/
-│   └── portfolioData.js   ← edit all content here
-└── styles/
-    └── globals.css        ← design tokens + layout classes
+│   └── portfolioData.js
+├── styles/
+│   └── globals.css
+└── App.jsx
 ```
 
 ---
 
-## Updating Content
+## Customization
 
-All user content lives in **`src/data/portfolioData.js`**. Edit that file to update anything — projects, skills, achievements, etc. — without touching component code.
+All portfolio content is centralized inside:
+
+```text
+src/data/portfolioData.js
+```
+
+Update this file to modify:
+
+* Personal Information
+* Projects
+* Skills
+* Achievements
+* Activities
+* Social Links
+* Contact Details
 
 ---
 
-## Deployment (Vercel — Recommended)
+## Deployment
 
-1. Push to GitHub (the `.env` is in `.gitignore` — add env vars on Vercel)
-2. Import repo on [vercel.com](https://vercel.com)
-3. Add the three `VITE_EMAILJS_*` variables in **Settings → Environment Variables**
-4. Deploy ✓
+### Vercel
 
-> Also works on Netlify or GitHub Pages. For GH Pages you may need `base` in `vite.config.js`.
+1. Push repository to GitHub
+2. Import project into Vercel
+3. Add environment variables
+4. Deploy
+
+### Netlify
+
+1. Connect repository
+2. Configure environment variables
+3. Build command:
+
+```bash
+npm run build
+```
+
+4. Publish directory:
+
+```text
+dist
+```
+
+---
+
+## Contact
+
+Email: [raghvendrashah21@gmail.com](mailto:raghvendrashah21@gmail.com)
+
+LinkedIn: https://www.linkedin.com/in/raghvendra-shah
+
+GitHub: https://github.com/raghav2556
+
+LeetCode: https://leetcode.com/u/raghav2105/
+
+---
+
+Built with React, curiosity, and a commitment to continuous learning.
