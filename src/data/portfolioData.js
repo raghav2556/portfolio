@@ -38,7 +38,7 @@ export const data = {
     },
     {
       institution: "St. Johns Senior Secondary School",
-      degree: "High School (UP Board)",
+      degree: "High School (CBSE)",
       field: null,
       years: "2020 – 2022",
       grade: "90.8%",
