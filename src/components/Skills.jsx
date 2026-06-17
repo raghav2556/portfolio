@@ -27,19 +27,6 @@ const SkillBar = ({ skill, index }) => {
           </span>
         </div>
       </div>
-
-      {/* Track */}
-      <div style={{ height: '5px', borderRadius: '3px', background: 'var(--scar-mark)', overflow: 'hidden' }}>
-        <motion.div
-          initial={{ width: '0%' }}
-          animate={{ width: inView ? `${skill.level}%` : '0%' }}
-          transition={{ duration: 1.2, ease: 'easeOut', delay: index * 0.06 }}
-          style={{
-            height: '100%', borderRadius: '3px',
-            background: 'linear-gradient(90deg, var(--cursed-purple), var(--aura-violet))',
-          }}
-        />
-      </div>
     </div>
   );
 };
