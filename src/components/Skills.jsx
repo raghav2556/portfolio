@@ -26,9 +26,6 @@ const SkillBar = ({ skill, index }) => {
             {skill.name}
           </span>
         </div>
-        <span style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: '11px', color: 'var(--text-muted)' }}>
-          {skill.level}%
-        </span>
       </div>
 
       {/* Track */}
